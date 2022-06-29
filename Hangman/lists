@@ -1,0 +1,121 @@
+### THE ASCII ART ###
+
+def welcome():
+    print('''
+        ___________.._______
+        | .__________))______|
+        | | / /      ||
+        | |/ /       ||
+        | | /        ||.-''.
+        | |/         |/  _  \
+        | |          ||  `/,|
+        | |          (\\`_.'
+        | |         .-`--'.
+        | |        /  . .  \
+        | |       // |   | \\
+        | |      //  | . |  \\
+        | |     ')   |   |   (`
+        | |          || ||
+        | |          || ||
+        | |          || ||
+        | |          || ||
+        | |         / | | \
+        """"""""""|_`-' `-' |"""|
+        |"|"""""""\ \       '"|"|
+        | |        \ \        | |
+        : :         \ \       : :  Welcome to Hangman!
+        . .          `'       . .
+      ''')
+
+def six_lives():
+    print('''
+     +---+
+      |   |
+          |
+          |
+          |
+          |
+    =========
+    ''')
+
+def five_lives():
+    print('''
+      +---+
+      |   |
+      O   |
+          |
+          |
+          |
+    =========
+    ''')
+
+def four_lives():
+    print('''
+      +---+
+      |   |
+      O   |
+      |   |
+          |
+          |
+    =========
+    ''')
+
+def three_lives():
+    print('''
+      +---+
+      |   |
+      O   |
+     /|   |
+          |
+          |
+    =========
+    ''')
+
+def two_lives():
+    print('''
+      +---+
+      |   |
+      O   |
+     /|\  |
+          |
+          |
+    =========
+    ''')
+
+def one_life():
+    print('''
+      +---+
+      |   |
+      O   |
+     /|\  |
+     /    |
+          |
+    =========
+    ''')
+
+def dead():
+    print('''
+      +---+
+      |   |
+      O   |
+     /|\  |
+     / \  |
+          |
+    =========
+    ''')
+
+def print_hangman(lives):
+    if lives == 0:
+        dead()
+    elif lives == 1:
+        one_life()
+    elif lives == 2:
+        two_lives()
+    elif lives == 3:
+        three_lives()
+    elif lives == 4:
+        four_lives()
+    elif lives == 5:
+        five_lives()
+    else:
+        six_lives()
