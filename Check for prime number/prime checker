@@ -1,0 +1,18 @@
+# Prime Checker
+
+def prime_checker(number):
+    tally = 0
+    for i in range(2, number + 1):
+        if number % i == 0 and i != number:
+            tally += 1
+
+    if tally != 0:
+        print("The number" , number, "is not a prime number.")
+    else:
+        print("The number", number, "is a prime number.")
+
+n = int(input("Enter an integer between 0 and 1000: "))
+if n in range(0,1001):
+    prime_checker(n)
+else:
+    print("The program only takes values between 0 and 1000")
